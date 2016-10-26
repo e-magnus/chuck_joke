@@ -26,6 +26,11 @@ dependencies {
     seleniumCompile 'org.seleniumhq.selenium:selenium-chrome-driver:3.0.1'
 }
 
+repositories {
+    maven { url 'http://repo1.maven.org/maven2' }
+    jcenter { url "http://jcenter.bintray.com/" }
+}
+
 task stage {
     dependsOn installDist
 }
